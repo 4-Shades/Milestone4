@@ -1,0 +1,6 @@
+model,accuracy,macro_f1,hard_cases_acc,sec_per_1k,cost_per_1k,n_test,n_hard,evaluated_at,notes
+Majority baseline,0.5033,0.3348,0.5,5e-06,0.0,300,30,2026-11-19T10:14:54+00:00,Always predicts the majority training label
+VADER,0.7267,0.7153,0.3333,4.675349,0.0,300,30,2026-11-19T10:15:09+00:00,compound >= 0.0 -> positive; no training
+TextBlob,0.71,0.6872,0.4,2.10408,0.0,300,30,2026-11-19T10:15:13+00:00,polarity >= 0 -> positive; no training
+NLTK + Naive Bayes,0.8867,0.8867,0.7,4.183167,0.0,300,30,2026-11-19T10:24:54+00:00,"plain prep; ngram=(1, 2), min_df=2, alpha=0.3; CV macro-F1=0.8944"
+LLM zero-shot (Haiku 5.5),0.9567,0.9567,1.0,1560.301,0.075,300,30,2026-11-19T10:25:31+00:00,"claude-haiku-5-5, prompt v1, thinking off; parse rate 100.0%; sec/1k = sequential API latency"

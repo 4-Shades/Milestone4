@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw downloaded data (re-download via notebooks/01_data)
+data/raw/
+
+# Trained model artifacts (rebuilt by notebooks/03_classic_ml)
+models/
+
+# Note: results/llm_cache.jsonl is intentionally tracked

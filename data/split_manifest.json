@@ -1,0 +1,26 @@
+{
+  "source": "IMDB 50K (data/raw/IMDB-Dataset.csv)",
+  "seed": 42,
+  "test_pool_fraction": 0.2,
+  "test_subset_size": 300,
+  "splits": {
+    "train": {
+      "file": "train.csv.gz",
+      "rows": 39662,
+      "label_counts": {
+        "negative": 19757,
+        "positive": 19905
+      },
+      "sha256": "936b52442a5c7f3d1605a61b9ec5b37280b7af38d1ee1b8bdf843b0f7162e142"
+    },
+    "test300": {
+      "file": "test300.csv",
+      "rows": 300,
+      "label_counts": {
+        "negative": 149,
+        "positive": 151
+      },
+      "sha256": "09f0113900208e0a88ea7551cd314c2e426da5631a6d0ddc32573bc984f55c05"
+    }
+  }
+}
